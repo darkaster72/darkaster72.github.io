@@ -1,0 +1,2 @@
+(this["webpackJsonpdarkaster72.github.io"]=this["webpackJsonpdarkaster72.github.io"]||[]).push([[0],{11:function(t,e,n){"use strict";n.r(e);var i=n(1),c=n.n(i),r=n(3),s=n.n(r),a=(n(8),n(9),n(0)),o=function(){return Object(a.jsx)("div",{className:"App",children:Object(a.jsx)("h1",{children:"Hi I am Ankit Sharma "})})};s.a.render(Object(a.jsx)(c.a.StrictMode,{children:Object(a.jsx)(o,{})}),document.getElementById("root"))},8:function(t,e,n){},9:function(t,e,n){}},[[11,1,2]]]);
+//# sourceMappingURL=main.d33ff15a.chunk.js.map
