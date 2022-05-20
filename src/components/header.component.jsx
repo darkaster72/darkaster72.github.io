@@ -1,5 +1,5 @@
 import "./header.styles.css";
-import {ReactComponent as Logo} from "../assets/logo.svg";
+import { ReactComponent as Logo } from "../assets/logo.svg";
 
 const Header = () => (
   <header className="absolute flex p-6 w-screen justify-around align-baseline gap-4 font-bold text-white">
