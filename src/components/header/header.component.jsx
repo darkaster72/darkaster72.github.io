@@ -1,4 +1,4 @@
-import "./header.styles.css";
+import { motion } from "framer-motion";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 const Header = () => (
@@ -7,9 +7,27 @@ const Header = () => (
       <Logo className="h-12 w-12"></Logo>
     </a>
     <div className="flex gap-x-8 text-xl">
-      <a href="#about">About me</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
+      <motion.a
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9 }}
+        href="#about"
+      >
+        About me
+      </motion.a>
+      <motion.a
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9 }}
+        href="#skills"
+      >
+        Skills
+      </motion.a>
+      <motion.a
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9 }}
+        href="#projects"
+      >
+        Projects
+      </motion.a>
     </div>
   </header>
 );
