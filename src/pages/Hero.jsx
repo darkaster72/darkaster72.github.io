@@ -62,7 +62,15 @@ const Hero = () => {
           </div>
         </div>
       </motion.div>
-      <a href="#about" className="absolute bottom-4 flex justify-center">
+      <a
+        href="#about"
+        className="absolute bottom-4 flex justify-center"
+        onClick={(e) => {
+          let hero = document.getElementById("about");
+          e.preventDefault();
+          hero && hero.scrollIntoView({ behavior: "smooth", block: "start" });
+        }}
+      >
         <ArrowDown className="animate-bounce text-purple-300 bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center" />
       </a>
     </section>
