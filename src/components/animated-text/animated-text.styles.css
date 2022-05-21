@@ -1,0 +1,21 @@
+.word-wrapper {
+  white-space: nowrap;
+}
+
+.container {
+  max-width: 960px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.animated-h1 {
+  @apply text-7xl font-bold mb-8;
+}
+
+.animated-h2 {
+  @apply text-5xl  opacity-75;
+}
+
+.animated-para {
+  @apply text-xl font-bold opacity-75;
+}
