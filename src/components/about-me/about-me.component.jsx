@@ -1,6 +1,6 @@
 import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
@@ -22,21 +22,21 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="h-screen flex flex-col  w-full bg-zinc-800 px-32 pt-16"
+      className="h-screen flex flex-col justify-center w-full bg-zinc-800 px-4 lg:px-32 pt-16"
     >
       <motion.div
-        className="box"
         ref={ref}
         variants={boxVariant}
         initial="hidden"
         animate={control}
       >
-        <h1 className="font-bold text-6xl w-fit text-white">About Me</h1>
+        <h2 className="font-bold text-6xl w-fit text-white">About Me</h2>
         <p className="text-white w-2/5 mt-16">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-          velit ex? Deserunt, nam qui tempora quas minima recusandae est magnam
-          consequuntur ipsa praesentium incidunt accusantium perspiciatis quasi
-          eaque facere ipsam.
+          My name is Ankit Sharma. I am a Full Stack Java Developer based in
+          India 🇮🇳. I am passionate about writing clean code and always like to
+          learn new things.
+          <br />
+          Apart from coding I like to meditate and watch movies
         </p>
       </motion.div>
     </section>

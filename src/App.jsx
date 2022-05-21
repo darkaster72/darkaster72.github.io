@@ -5,7 +5,7 @@ import HomePage from "./pages/home.component";
 import Header from "./components/header/header.component";
 
 const App = () => (
-  <div className="App">
+  <div className="">
     <Router>
       <Header></Header>
       <Routes>

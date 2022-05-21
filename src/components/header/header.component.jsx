@@ -8,7 +8,7 @@ const Header = () => {
     { label: "Projects", id: "projects" },
   ];
   return (
-    <header className="absolute flex px-36 pt-8 w-full justify-between align-baseline font-bold text-white">
+    <header className="absolute flex px-4 lg:px-36 pt-8 w-full justify-between align-baseline font-bold text-white">
       <a href="#home">
         <Logo className="h-12 w-12"></Logo>
       </a>

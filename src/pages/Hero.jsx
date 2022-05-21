@@ -24,7 +24,10 @@ export const container = {
 
 const Hero = () => {
   return (
-    <section id="home" className="h-screen flex justify-center bg-zinc-800">
+    <section
+      id="home"
+      className="h-screen w-full flex justify-center bg-zinc-800"
+    >
       <motion.div
         initial="hidden"
         animate="visible"
@@ -32,8 +35,12 @@ const Hero = () => {
         className="text-white flex flex-col justify-center"
       >
         <div className="container">
-          {placeholderText.map((item, index) => {
-            return <AnimatedText {...item} key={index} />;
+          {placeholderText.map(({ type, text }, index) => {
+            return (
+              <AnimatedText type={type} key={index}>
+                {text}
+              </AnimatedText>
+            );
           })}
         </div>
         <div className="flex gap-x-3 justify-center items-center flex-col">

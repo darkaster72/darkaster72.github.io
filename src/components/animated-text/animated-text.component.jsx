@@ -40,7 +40,7 @@ const AnimatedCharacters = (props) => {
   };
 
   //  Split each word of props.text into an array
-  const splitWords = props.text.split(" ");
+  const splitWords = props.children.split(" ");
 
   // Create storage array
   const words = [];
@@ -65,7 +65,7 @@ const AnimatedCharacters = (props) => {
         return (
           // Wrap each word in the Wrapper component
           <Wrapper key={index}>
-            {words[index].flat().map((element, index) => {
+            {word.flat().map((element, index) => {
               return (
                 <span
                   style={{
