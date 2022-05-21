@@ -1,5 +1,9 @@
 name: Deploy Github Pages
-on: [push]
+on:
+  push:
+    branches:
+      - main
+      - "releases/**"
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -9,11 +13,11 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          npm install
-          npm run build
+          yarn install
+          yarn run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          branch: gh-pages 
+          branch: gh-pages
           folder: build
