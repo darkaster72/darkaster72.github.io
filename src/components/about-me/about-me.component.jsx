@@ -3,11 +3,11 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
   hidden: { opacity: 0, scale: 0 },
 };
 
-const AboutUs = () => {
+const AboutMe = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
 
@@ -43,4 +43,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutMe;
