@@ -1,0 +1,3 @@
+.comma-seperate li::after {
+  content: ",";
+}

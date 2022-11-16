@@ -1,13 +1,11 @@
-import "./App.css";
 import React from "react";
-import { Routes, BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css";
 import HomePage from "./pages/home.component";
-import Header from "./components/header/header.component";
 
 const App = () => (
   <div className="">
     <Router>
-      <Header></Header>
       <Routes>
         <Route exact path="/" element={<HomePage />}></Route>
       </Routes>
