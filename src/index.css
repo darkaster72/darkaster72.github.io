@@ -4,8 +4,8 @@
 
 body {
   margin: 0;
-  font-family: "Playfair Display", serif;
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Playfair Display", serif; */
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,4 +13,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.shadow-text {
+  text-shadow: 1px 1px 3px rgb(0 0 0 / 22%), 2px 4px 7px rgb(73 64 125 / 30%);
 }
