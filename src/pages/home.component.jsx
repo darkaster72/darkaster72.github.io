@@ -28,9 +28,9 @@ const HomePage = () => (
               <hr className="px-4 text-gray-700 opacity-40" />
             </div>
             <div className="mt-4 text-2xl">
-              A guy passionate about creating better code. Always learning
-              something new and trying to be better. For any opportunities hit
-              me up&nbsp;
+              A guy passionate about creating better code. With 3+ years of
+              experience, always learning something new and trying to be better.
+              For any opportunities hit me up&nbsp;
               <a
                 href="mailto:sankit72+opportunity@gmail.com"
                 className="dancing-text"
