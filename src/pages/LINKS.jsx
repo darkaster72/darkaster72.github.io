@@ -17,15 +17,15 @@ export const LINKS = [
 ];
 export const SKILLS = [
   {
-    title: "Backend Technologies",
+    title: "Backend",
     items: ["Java", "Spring Boot", "MySQL", "Postgres", "MongoDB"],
   },
   {
-    title: "Frontend Technologies",
+    title: "Frontend",
     items: ["Next.js", "React", "Angular", "Flutter", "HTML", "CSS", "JS/TS"],
   },
   {
-    title: "Cloud Technologies",
+    title: "Cloud",
     items: ["AWS EC2", "AWS Lambda", "AWS Amplify"],
   },
 ];

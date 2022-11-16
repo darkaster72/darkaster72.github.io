@@ -28,9 +28,9 @@ const HomePage = () => (
               <hr className="px-4 text-gray-700 opacity-40" />
             </div>
             <div className="mt-4 text-2xl">
-              A guy passionate about creating better code. With 3+ years of
-              experience, always learning something new and trying to be better.
-              For any opportunities hit me up&nbsp;
+              A guy passionate about creating better code. With almost 4 years
+              of experience, always learning something new and trying to be
+              better. For any opportunities hit me up&nbsp;
               <a
                 href="mailto:sankit72+opportunity@gmail.com"
                 className="dancing-text"
@@ -60,7 +60,7 @@ const HomePage = () => (
               <div className="text-3xl font-thin">Skills</div>
               <div className="flex flex-col gap-6 mt-4 pl-2">
                 {SKILLS.map((skill) => (
-                  <div className="flex flex-col gap-4" key={skill.title}>
+                  <div className="flex flex-col gap-2" key={skill.title}>
                     <div className="text-2xl font-medium">{skill.title}</div>
                     <div className="flex flex-wrap gap-1 text-2xl font-thin comma-seperate list-none">
                       {skill.items.map((item) => (
