@@ -20,7 +20,7 @@ const HomePage = () => (
             </a>
           ))}
         </div>
-        <div className="md:col-span-10 col-span-5 md:border-l border-gray-300 border-opacity-40">
+        <div className="md:col-span-10 col-span-12 md:border-l border-gray-300 border-opacity-40">
           <div className="max-w-full md:px-8 px-2">
             <div className="">
               <div className="font-black text-7xl">ankit sharma</div>
