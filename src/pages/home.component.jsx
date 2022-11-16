@@ -3,12 +3,12 @@ import { CONTACTS, LINKS, PROJECTS, SKILLS } from "./LINKS";
 
 const HomePage = () => (
   <div className="min-h-screen bg-gray-100 md:py-6 justify-center py-12 bg-gradient-to-br from-yellow-500 via-purple-500 to-blue-500">
-    <div className="py-3 lg:mx-32 mx-4">
+    <div className="py-3 md:mx-16 lg:mx-24 xl:mx-32 mx-4">
       <div
-        className="grid grid-cols-5 p-8 md:p-16 lg:p-20 bg-white shadow-lg rounded-3xl bg-clip-padding bg-opacity-25 font-sans text-title shadow-text"
+        className="grid grid-cols-12 p-8 md:p-16 lg:p-20 bg-white shadow-lg rounded-3xl bg-clip-padding bg-opacity-25 font-sans text-title shadow-text"
         style={{ backdropFilter: "blur(20px)" }}
       >
-        <div className="hidden md:flex flex-col gap-6 font-semibold">
+        <div className="hidden md:flex flex-col col-span-2 gap-6 font-semibold text-lg">
           {LINKS.map((link) => (
             <a
               key={link.url}
@@ -20,7 +20,7 @@ const HomePage = () => (
             </a>
           ))}
         </div>
-        <div className="md:col-span-4 col-span-5 md:border-l border-gray-300 border-opacity-40">
+        <div className="md:col-span-10 col-span-5 md:border-l border-gray-300 border-opacity-40">
           <div className="max-w-full md:px-8 px-2">
             <div className="">
               <div className="font-black text-7xl">ankit sharma</div>
@@ -28,10 +28,17 @@ const HomePage = () => (
               <hr className="px-4 text-gray-700 opacity-40" />
             </div>
             <div className="mt-4 text-2xl">
-              A guy passionate about creating better shit! Lorem ipsum dolor sit
-              amet, consectetur adipisicing elit. Vero beatae ducimus asperior
+              A guy passionate about creating better code. With almost 4 years
+              of experience, always learning something new and trying to be
+              better. For any opportunities hit me up&nbsp;
+              <a
+                href="mailto:sankit72+opportunity@gmail.com"
+                className="dancing-text"
+              >
+                here.
+              </a>
             </div>
-            <section className="mt-16" id="projects">
+            <section className="pt-16" id="projects">
               <div className="text-3xl font-thin">Projects</div>
               <div className="flex flex-col gap-4 mt-4 pl-2">
                 {PROJECTS.map((project) => (
@@ -49,11 +56,11 @@ const HomePage = () => (
                 ))}
               </div>
             </section>
-            <section className="mt-16" id="skills">
+            <section className="pt-16" id="skills">
               <div className="text-3xl font-thin">Skills</div>
               <div className="flex flex-col gap-6 mt-4 pl-2">
                 {SKILLS.map((skill) => (
-                  <div className="flex flex-col gap-4" key={skill.title}>
+                  <div className="flex flex-col gap-2" key={skill.title}>
                     <div className="text-2xl font-medium">{skill.title}</div>
                     <div className="flex flex-wrap gap-1 text-2xl font-thin comma-seperate list-none">
                       {skill.items.map((item) => (
@@ -66,12 +73,12 @@ const HomePage = () => (
                 ))}
               </div>
             </section>
-            <section className="mt-16" id="contacts">
+            <section className="pt-16" id="contacts">
               <div className="text-3xl font-thin">Contacts</div>
               <div className="flex flex-col gap-4 mt-4 pl-2">
                 {CONTACTS.map((contact) => (
                   <a
-                    className="flex flex-col gap-2 text-4xl hover:text-white transition-all duration-300 hover:underline"
+                    className="flex flex-col gap-2 text-4xl hover:text-white transition-all duration-300"
                     key={contact.title}
                     href={contact.url}
                     target="_blank"
